@@ -4,8 +4,8 @@ pub fn build(b: *std.Build) void {
     const target = b.standardTargetOptions(.{});
     const optimize = b.standardOptimizeOption(.{});
     const exe = b.addExecutable(.{
-        .name = "timer_tcp",
-        .root_source_file = b.path("timer_tcp.zig"),
+        .name = "threads",
+        .root_source_file = b.path("threads.zig"),
         .target = target,
         .optimize = optimize,
     });
